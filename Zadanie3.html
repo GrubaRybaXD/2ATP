@@ -2,10 +2,11 @@
 <html>
 <head>
 	<title>Jquery ćwiczenia</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<meta charset="utf-8">
 	<script type="text/javascript">
 		function pobierzNapis(){
-			var napis = document.getElementByTagName("div")[0].innerHTML;
+			var napis = document.getElementsByTagName("div")[0].innerHTML;
 			alert(napis);
 		}
 	</script>
@@ -13,6 +14,15 @@
 <body>
 	<div>Bardzo lubię programować</div>
 	<button onclick="pobierzNapis()">PRZYCISK</button>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#info").click(function(){
+				var zmienna = $(this).html();
+				alert(div);
+			});
+		});
+	</script>
+	<div id="info">Aplikacja by Dawid "Śledzik" Szymczak 2021</div>
 
 </body>
 </html>
