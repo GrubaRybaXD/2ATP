@@ -3,8 +3,16 @@
 <head>
 	<title>Jquery ćwiczenia</title>
 	<meta charset="utf-8">
+	<script type="text/javascript">
+		function pobierzNapis(){
+			var napis = document.getElementByTagName("div")[0].innerHTML;
+			alert(napis);
+		}
+	</script>
 </head>
 <body>
+	<div>Bardzo lubię programować</div>
+	<button onclick="pobierzNapis()">PRZYCISK</button>
 
 </body>
 </html>
